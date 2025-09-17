@@ -1,0 +1,25 @@
+/* Nav Bar Link  */
+.nav-link-custom {
+  transition: 0.3s ease;
+}
+.nav-link-custom:hover {
+  color: white !important;
+}
+
+/* Start Home Page  */
+#main-heading {
+  font-family: 'Markazi Text', serif  !important;
+  color: #F4CE14 !important;
+  font-size: clamp(28px, 5vw, 56px);  /* Responsive Heading 1 */
+  line-height: 0.5;
+}
+#main-heading span {
+  font-size: clamp(18px, 3vw, 32px); /* Responsive Span */
+}
+#landing-page1 #para-home {
+  color: #ffffff;
+  font-size: clamp(14px, 2.5vw, 18px); /* Responsive paragraph */
+  line-height: 1.4;
+  margin-top: 10px;
+}
+/* End Home Page  */
