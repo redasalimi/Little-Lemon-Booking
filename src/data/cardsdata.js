@@ -25,3 +25,25 @@ const cards = [
 ];
 
 export default cards;
+
+
+export const testimonialcards = [
+    {
+        name: 'Reda Salimi',
+        img : '/assets/imgs/reda-pic.jpg',
+        rating: 5,
+        review : 'Great food and excellent service! Highly recommended.'
+    },
+    {
+        name: 'Yasser Naim',
+        img : '/assets/imgs/yasser-pic.JPG',
+        rating: 5,
+        review : 'Great food and excellent service! Highly recommended.'
+    },
+    {
+        name: 'Kamal Mosleh',
+        img : '/assets/imgs/kamal-pic.jpg',
+        rating: 5,
+        review : 'Great food and excellent service! Highly recommended.'
+    },
+]

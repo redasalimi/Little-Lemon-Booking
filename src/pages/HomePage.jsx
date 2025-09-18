@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import Rectangle from '/assets/imgs/Rectangle 45.png'
 import CardTemple from '../Components/Card'
-import cards from '../data/cardsdata'
+import cards, {testimonialcards} from '../data/cardsdata'
 import Testimonials from './sections/Testimonials'
 
 function HomePage() {
@@ -47,10 +47,13 @@ function HomePage() {
             </div>
         </section>
         <section className='w-100 p-5 mt-md-5 h-auto d-inline-block mb-5 ' style={{backgroundColor: '#495E57'}}>
-                <h2 id='second-heading'>Testimonials</h2>
-            <div className='row'>
-
-                < Testimonials />
+                <h2 id='second-heading justify-content-center'>Testimonials</h2>
+            <div className='row gap-3 justify-content-center'>
+                <div className="col-xl-2 d-none d-md-block"></div>
+                {testimonialcards.map((testCard, index) => (
+                    <Testimonials key={index} name={testCard.name} img={testCard.img} rating={testCard.rating} review={testCard.review}/>
+                ))}
+                <div className="col-xl-2 d-none d-md-block"></div>
             </div>
         </section>
     </>
