@@ -1,11 +1,14 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import Rectangle from '../assets/imgs/Rectangle 45.png'
+import Rectangle from '/assets/imgs/Rectangle 45.png'
+import CardTemple from '../Components/Card'
+import cards from '../data/cardsdata'
+import Testimonials from './sections/Testimonials'
 
 function HomePage() {
   return (
     <>
-        <section id='landing-page1' className='w-100 p-3 h-auto d-inline-block' style={{backgroundColor: '#495E57'}}>
+        <section id='home-first-section' className='w-100 p-3 h-auto d-inline-block mb-5' style={{backgroundColor: '#495E57'}}>
             <div className='container position-relative'>
                 <div className='row'>
                     <div className="col-md-2 d-none d-md-block"></div>
@@ -15,7 +18,7 @@ function HomePage() {
                             <p id='para-home'>
                                 We are a family owned <br />Mediterranean restaurant,<br />focused on traditional <br/>recipes served with a modern <br />twist.
                             </p>
-                            <button className='btn text-dark fw-semibold' as={Link} to={'/reservations'} style={{backgroundColor : '#F4CE14'}}>Reserve a Table</button>
+                            <Link className='btn text-dark fw-semibold' to={'/reservations'}  style={{backgroundColor : '#F4CE14'}}>Reserve a Table</Link>
                         </div>
                     </div>
 
@@ -25,9 +28,30 @@ function HomePage() {
                     <div className="col-md-2 d-none d-md-block"></div>
                 </div>
             </div>
+        </section >
+        <section className='container mt-md-5 mb-5'>
+            <div className="row mt-3">
+                <div className="col-md-2 d-none d-md-block"></div>
+                <div className="col-12 col-md-8 d-flex justify-content-between align-items-center">
+                    <h2 id='second-heading' >This Weeks Specials!</h2>
+                    <Link className='btn text-dark fw-semibold align-items-center' to={'/reservations'}  style={{backgroundColor : '#F4CE14'}}>Online Menu</Link>
+                </div>
+                <div className="col-md-2 d-none d-md-block"></div>
+            </div>
+            <div className="row row-cols-1 row-cols-md-3 g-4 mt-3">
+                {cards.map(card => (
+                <div className="col" key={card.id}>
+                    <CardTemple title={card.title} img={card.img} desc={card.desc} price={card.price}/>
+                </div>
+                ))}
+            </div>
         </section>
-        <section>
-            
+        <section className='w-100 p-5 mt-md-5 h-auto d-inline-block mb-5 ' style={{backgroundColor: '#495E57'}}>
+                <h2 id='second-heading'>Testimonials</h2>
+            <div className='row'>
+
+                < Testimonials />
+            </div>
         </section>
     </>
   )

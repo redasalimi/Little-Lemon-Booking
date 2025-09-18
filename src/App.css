@@ -16,10 +16,14 @@
 #main-heading span {
   font-size: clamp(18px, 3vw, 32px); /* Responsive Span */
 }
-#landing-page1 #para-home {
+#home-first-section #para-home {
   color: #ffffff;
   font-size: clamp(14px, 2.5vw, 18px); /* Responsive paragraph */
   line-height: 1.4;
   margin-top: 10px;
+}
+#second-heading {
+  font-size: clamp(28px, 5vw, 46px);
+  font-family: 'Markazi Text', serif  !important;
 }
 /* End Home Page  */
