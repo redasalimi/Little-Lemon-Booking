@@ -46,15 +46,13 @@ function HomePage() {
                 ))}
             </div>
         </section>
-        <section className='w-100 p-5 mt-md-5 h-auto d-inline-block mb-5 ' style={{backgroundColor: '#495E57'}}>
-                <h2 id='second-heading justify-content-center'>Testimonials</h2>
-            <div className='row gap-3 justify-content-center'>
-                <div className="col-xl-2 d-none d-md-block"></div>
-                {testimonialcards.map((testCard, index) => (
-                    <Testimonials key={index} name={testCard.name} img={testCard.img} rating={testCard.rating} review={testCard.review}/>
-                ))}
-                <div className="col-xl-2 d-none d-md-block"></div>
-            </div>
+        <section className='container-fluid w-100 p-5 mt-md-5 h-auto d-inline-block mb-5' style={{backgroundColor: '#495E57'}}>
+                <h2 id='second-heading' className='row my-5 pb-3 text-light justify-content-center fw-bolder '>Testimonials</h2>
+                <div className='row gap-3 justify-content-center'>
+                    {testimonialcards.map((testCard, index) => (
+                        <Testimonials key={index} name={testCard.name} img={testCard.img} rating={testCard.rating} review={testCard.review}/>
+                    ))}
+                </div>
         </section>
     </>
   )
