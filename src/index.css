@@ -16,3 +16,7 @@
   margin: 0;
   box-sizing: border-box;
 }
+
+.w-fit {
+  width: fit-content;
+}

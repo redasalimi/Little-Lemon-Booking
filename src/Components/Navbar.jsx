@@ -20,7 +20,7 @@ function NavBar() {
             <Nav.Link as={Link} to={'/about'} className='btn btn-success nav-link-custom fw-semibold w-100'>about</Nav.Link>
             <Nav.Link as={Link} to={'/menu'} className='btn btn-success nav-link-custom fw-semibold w-100'>Menu</Nav.Link>
             <Nav.Link as={Link} to={'/reservations'} className='btn btn-success nav-link-custom fw-semibold w-100'>Reservations</Nav.Link>
-            <Nav.Link as={Link} to={'/booking'} className='btn btn-success nav-link-custom fw-semibold w-100'>Order Online</Nav.Link>
+            <Nav.Link as={Link} to={'/booking'} className='btn btn-success nav-link-custom fw-semibold w-100 '>Order Online</Nav.Link>
             <Nav.Link as={Link} to={'/login'} className='btn btn-success nav-link-custom fw-semibold w-100' >Login</Nav.Link>
           </Nav>
         </Navbar.Collapse>

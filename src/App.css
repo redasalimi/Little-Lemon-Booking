@@ -26,4 +26,58 @@
   font-size: clamp(28px, 5vw, 46px);
   font-family: 'Markazi Text', serif  !important;
 }
+/* Last Section  */
+#main-heading-last {
+  font-family: 'Markazi Text', serif  !important;
+  color: #F4CE14 !important;
+  font-size: clamp(33px, 5vw, 64px);  /* Responsive Heading 1 */
+  line-height: 1.5;
+}
+#para-home-last {
+  font-size: clamp(14px, 2.5vw, 18px); /* Responsive paragraph */
+  line-height: 1.5;
+  margin-top: 10px;
+}
+
+/* Mobile adjustments last section */
+@media (max-width: 768px) {
+  .img-wrapper {
+    width: 200px !important;
+    height: 250px !important;
+  }
+
+  .overlay-img {
+    width: 170px !important;
+    height: 226px !important;
+    top: -20% !important;
+    right: -30% !important;
+  }
+
+  #main-heading-last {
+    text-align: center !important;
+  }
+
+  #para-home-last {
+    text-align: center !important;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+/* Tablet adjustments (iPad size) */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .img-wrapper {
+    width: 240px !important;
+    height: 300px !important;
+    margin: 0 auto; /* Center it */
+  }
+
+  .overlay-img {
+    width: 220px !important;
+    height: 280px !important;
+    top: -25% !important;
+    right: -30% !important;
+  }
+
+}
 /* End Home Page  */

@@ -54,6 +54,56 @@ function HomePage() {
                     ))}
                 </div>
         </section>
+        <section className="py-5 my-5">
+            <div className="container">
+                <div className="row gap-5 align-items-center">
+                {/* Text section */}
+                <div className="col-md-6 text-md-start text-center mb-4 mb-md-0 pe-md-5">
+                    <h1 id="main-heading-last" className="fs-1 fw-bold">
+                    Little Lemon <br />
+                    <span className="fs-4 text-dark">Chicago</span>
+                    </h1>
+                    <p id="para-home-last" className="text-dark mt-4">
+                    Little Lemon Chicago is a family-owned Mediterranean restaurant in
+                    the heart of the city, run by brothers Mario and Adrian. Inspired by
+                    their childhood recipes, they bring classic Mediterranean flavors with
+                    a modern twist. The menu offers both quick lunches and leisurely
+                    dinners, all served in a warm and welcoming atmosphere.
+                    </p>
+                </div>
+
+                {/* Images */}
+                <div
+                    className="position-relative mt-5 mx-auto img-wrapper"
+                    style={{ width: "272px", height: "338px" }}
+                >
+                    {/* الصورة الرئيسية */}
+                    <img
+                    src="/assets/imgs/restaurant-twin.jpg"
+                    alt="Main Restaurant"
+                    className="img-fluid rounded main-img shadow"
+                    style={{ width: "100%", height: "100%", objectFit: "cover" }}
+                    />
+
+                    {/* الصورة اللي فوق */}
+                    <img
+                    src="/assets/imgs/Mario-and-Adrian.jpg"
+                    alt="Overlay"
+                    className="position-absolute rounded overlay-img shadow"
+                    style={{
+                        width: "272px",
+                        height: "338px",
+                        objectFit: "cover",
+                        top: "-40%",
+                        right: "-60%",
+                    }}
+                    />
+                </div>
+                </div>
+            </div>
+        </section>
+
+
     </>
   )
 }
