@@ -7,7 +7,7 @@ const Footer = () => {
     <footer className="container-fluid bg-secondary text-light">
         <div className="container pt-5">
             <div className="row text-center text-md-start gy-4 justify-content-center">
-                <div className="col-12 col-md-3 d-flex justify-content-center justify-content-md-start">
+                <div className="col-6 col-md-3 d-flex justify-content-center justify-content-md-start">
                     <img 
                         src={secondaryLogo} 
                         alt="Little Lemon Logo" 
@@ -16,7 +16,7 @@ const Footer = () => {
                     />
                 </div>
 
-                <div className="col-12 col-md-3 ">
+                <div className="col-6 col-md-3 ">
                     <h4>Navigation</h4>
                     <ul className="list-unstyled d-flex flex-column" >
                         <Link to="/" className="link-light">Home</Link>
@@ -28,7 +28,7 @@ const Footer = () => {
                     </ul>
                 </div>
 
-                <div className="col-12 col-md-3">
+                <div className="col-6 col-md-3">
                     <h4>Contact</h4>
                     <ul className="list-unstyled d-flex flex-column">
                         <li><p>69 Vico Araratiano</p></li>
@@ -37,7 +37,7 @@ const Footer = () => {
                     </ul>
                 </div>
 
-                <div className="col-12 col-md-3">
+                <div className="col-6 col-md-3">
                     <h4>Socials</h4>
                     <ul  className="list-unstyled d-flex flex-column">
                         <li><a href="https://www.facebook.com" className="link-light" target="_blank" rel="noopener noreferrer">Facebook</a></li>
