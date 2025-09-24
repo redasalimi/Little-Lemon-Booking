@@ -18,7 +18,7 @@ function HomePage() {
                             <p id='para-home'>
                                 We are a family owned <br />Mediterranean restaurant,<br />focused on traditional <br/>recipes served with a modern <br />twist.
                             </p>
-                            <Link className='btn text-dark fw-semibold' to={'/reservations'}  style={{backgroundColor : '#F4CE14'}}>Reserve a Table</Link>
+                            <Link className='btn text-dark fw-semibold btn-warning' to={'/reservations'}  style={{backgroundColor : '#F4CE14'}}>Reserve a Table</Link>
                         </div>
                     </div>
 
